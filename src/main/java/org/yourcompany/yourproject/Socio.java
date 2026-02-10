@@ -5,7 +5,7 @@ public class Socio extends Usuario {
     private int ejemplaresEnPrestamo;
     private double multasPendientes;
 
-    public Socio(String id, String nombre, String email, String turno, int limiteEmjemplares) {
+    public Socio(String id, String nombre, String email, int limiteEmjemplares) {
         super(id, nombre, email);
         this.limiteEmjemplares = limiteEmjemplares;
         ejemplaresEnPrestamo = 0;
