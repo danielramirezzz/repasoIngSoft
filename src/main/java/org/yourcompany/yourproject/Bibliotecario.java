@@ -1,11 +1,11 @@
 
 package org.yourcompany.yourproject;
 
-public class bibliotecario extends  usuario{
+public class Bibliotecario extends Usuario {
 
     private String turno;
 
-    public bibliotecario(String id, String nombre, String email, String turno) {
+    public Bibliotecario(String id, String nombre, String email, String turno) {
         super(id, nombre, email);
         this.turno = turno;
     }
