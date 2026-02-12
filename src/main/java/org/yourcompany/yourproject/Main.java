@@ -15,6 +15,6 @@ public class Main {
         System.out.println(bibliotecario.darEmail());
 
         Socio socio = new Socio("1", "Daniel", "Daniel.ramirez", 5);
-        socio.registrarPrestamo(5);
+        socio.registrarPrestamo(2);
     }
 }

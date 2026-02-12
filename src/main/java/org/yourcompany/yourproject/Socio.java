@@ -1,5 +1,7 @@
 package org.yourcompany.yourproject;
 
+import javax.swing.*;
+
 public class Socio extends Usuario {
     private int limiteEmjemplares;
     private int ejemplaresEnPrestamo;
@@ -19,6 +21,6 @@ public class Socio extends Usuario {
         if (multasPendientes > 0){
             throw new IllegalArgumentException("No se puede pedir, tiene multa");
         }
-        System.out.println("Se prestaron" + cantidad + "libros");
+        System.out.println("Se prestaron " + cantidad + " libros");
     }
 }
