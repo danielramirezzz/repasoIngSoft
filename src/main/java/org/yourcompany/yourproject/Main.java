@@ -11,10 +11,16 @@ package org.yourcompany.yourproject;
 public class Main {
 
     public static void main(String[] args) {
-        Bibliotecario bibliotecario = new Bibliotecario("12", "Juan", "Juan.solano", "23");
-        System.out.println(bibliotecario.darEmail());
+        Biblioteca biblioteca = new Biblioteca();
+
+
+        Bibliotecario bibliotecario = new Bibliotecario("19", "Daniel", "daniel.ramirez2", "10");
+        biblioteca.agregarBibliotecario(bibliotecario);
 
         Socio socio = new Socio("1", "Daniel", "Daniel.ramirez", 5);
-        socio.registrarPrestamo(2);
+        biblioteca.agregarSocio(socio);
+
+        System.out.println(biblioteca.darSocios().get(0).darNombre());
+
     }
 }
